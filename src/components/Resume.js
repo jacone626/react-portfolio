@@ -3,7 +3,8 @@ import React from 'react';
 
 function Resume() {
   return (
-   conesole.log("Resume"))
+    <h1>Resume</h1>
+  )
 }
 
 export default Resume;
