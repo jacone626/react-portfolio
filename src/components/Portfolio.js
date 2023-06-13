@@ -3,7 +3,7 @@ import React from 'react';
 
 function Portfolio() {
   return (
-  <div>
+    <div class="container mt-5">
     <section id="portfolio" class="portfolio">
     <div class="container">
 
