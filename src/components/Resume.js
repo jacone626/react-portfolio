@@ -3,7 +3,7 @@ import React from 'react';
 
 function Resume() {
   return (
-  <div class="container mt-5">
+  <div className="container mt-5">
     <h2>Resume</h2>
       <p>Download my resume</p>
 
