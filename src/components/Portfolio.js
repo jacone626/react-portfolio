@@ -1,5 +1,5 @@
 import React from 'react';
-
+import testPhoto from "../images/crypto-project-1.png"
 
 function Portfolio() {
   return (
@@ -9,14 +9,13 @@ function Portfolio() {
 
       <div class="section-title">
         <h2>Portfolio</h2>
-        <p>My Works</p>
       </div>
 
       <div class="row portfolio-container">
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="assets/images/crypto-project-1.png" class="img-fluid" alt="crypto lookup application homescreen"/>
+            <img src={testPhoto} class="img-fluid" alt="crypto lookup application homescreen"/>
             <div class="portfolio-info">
               <h4>Crypto-Look-up</h4>
               <p>HTML/CSS/Javscript</p>
