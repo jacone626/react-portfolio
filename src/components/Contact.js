@@ -1,57 +1,84 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+// Here we import a helper function that will check if the email is valid
+import { validateEmail } from '../utils/helpers';
 
 function Contact() {
+  // Create state variables for the fields in the form
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState('');
+  const [userName, setUserName] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'userName') {
+      setUserName(inputValue);
+    } else {
+      setPassword(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email) || !userName) {
+      setErrorMessage('Email or username is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    alert(`Hello ${userName}`);
+
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setUserName('');
+    setEmail('');
+  };
+
   return (
-  <div>
-    <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>734 Arjean Dr, Wilmington, NC 28411</p>
-          </div>
+    <div>
+      <h2>Contact</h2>
+      <form className="form">
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="email"
+        />
+        <input
+          value={userName}
+          name="userName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="username"
+        />
+        <input
+          value={password}
+          name="password"
+          onChange={handleInputChange}
+          type="password"
+          placeholder="Password"
+        />
+        <button type="button" onClick={handleFormSubmit}>Submit</button>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
         </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://github.com/jacone626" target="_blank" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/james-alan-cone/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p><a href="mailto:jacone626@gmail.com">jacone626@gmail.com</a></p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p>910-619-6903</p>
-          </div>
-        </div>
-      </div>
+      )}
     </div>
-    </section>
-  </div>
-  )
+  );
 }
 
 export default Contact;
