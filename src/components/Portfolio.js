@@ -50,7 +50,7 @@ const projects = [
 function Portfolio() {
   return (
     <div className="container mt-5">
-        <h2>Portfolio</h2>
+        <h2 id="portfolio">Portfolio</h2>
      
         <Project projects={projects}/>
 

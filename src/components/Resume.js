@@ -1,12 +1,12 @@
 import React from 'react';
-
+import '../css/Resume.css'
 
 function Resume() {
   return (
   <div className="container mt-5">
-    <h2>Resume</h2>
-      <p>Download my <a href="/images/James_A_Cone_Resume_2023 - Google Docs.pdf" target="_blank">Resume</a></p>
-
+    <h2 id='resume'>Resume</h2>
+      <p id="resume-download">Download my <a href="/images/James_A_Cone_Resume_2023 - Google Docs.pdf" target="_blank">Resume</a></p>
+	<div id="resume-list">
       <h5>Front-End Proficiencies</h5>
 				<ul>
 					<li>HTML</li>
@@ -19,15 +19,16 @@ function Resume() {
 				</ul>
 				<br></br>
 				<h5>Back-End Proficiencies</h5>
-				<ul>
+				<ul id="margin-resume">
 					<li>APIs</li>
 					<li>NodeJS</li>
 					<li>Express</li>
 					<li>MySQL</li>
 					<li>GraphQL</li>
 					<li>Progressive Web Applications</li>
-          <li>MongoDB</li>
+          			<li>MongoDB</li>
 				</ul>
+	 </div>
   </div>
   )
 }

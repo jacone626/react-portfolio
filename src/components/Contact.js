@@ -53,7 +53,7 @@ function Contact() {
 
   return (
     <div className="container mt-5">
-      <h2>Contact</h2>
+      <h2 id="contact">Contact</h2>
       <form className="form">
         <h5>Name:</h5>
             <input

@@ -4,3 +4,14 @@
   margin: 2%;
   border-radius: 50%;
 }
+
+#about-me{
+  margin-bottom: 0px;
+  padding: 5px;
+  background-color: beige;
+}
+
+#about{
+  color:white;
+  font-weight: bold;
+}

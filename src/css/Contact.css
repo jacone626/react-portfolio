@@ -1,5 +1,5 @@
 .form {
-    margin: 20px;
+    margin-top: 20px;
   }
   
   .form input {
@@ -13,6 +13,11 @@
     height:250px;
     vertical-align: top;
     line-height: normal;
+  }
+
+  #contact{
+    color:white;
+    font-weight: bold;
   }
 
   @media (max-width: 912px) {
