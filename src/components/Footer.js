@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/Header&Footer.css';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaYoutube } from 'react-icons/fa';
 
 function Footer() {
     return (
@@ -13,6 +13,11 @@ function Footer() {
         <a href="https://github.com/jacone626" target="_blank" rel="noreferrer" className="github">
           <i>
             <FaGithub size={50} />
+          </i>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noreferrer" className="youtube">
+          <i>
+            <FaYoutube size={50} />
           </i>
         </a>
       </footer>

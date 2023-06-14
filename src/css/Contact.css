@@ -20,6 +20,10 @@
     font-weight: bold;
   }
 
+  button{
+    padding: 5px;
+  }
+  
   @media (max-width: 912px) {
     .form input {
         width: 90%;

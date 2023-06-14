@@ -2,20 +2,27 @@ footer {
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-    padding: 10px 5px;
-    background-color:#A3BBAD;
+    padding: 30px 5px; 
+    background-color: rgb(175, 175, 121);
 }
 
-.linkedin {
-    padding-right: 50px;
+.github {
+    padding-right: 75px;
+    padding-left: 75px;
 }
 
 .github{
     color: black;
 }
 
+.youtube{
+    color:red;
+}
+
 #header-title{
 text-align: center;
+color: rgb(15, 12, 12);
+font-weight: bold;
 }
 
 .header-nav-color{

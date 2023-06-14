@@ -6,7 +6,7 @@ import './App.css'
 
 function App() {
   return (
-    <div>
+    <div id="full-screen">
       <Header />
         <div className="background-color">
           <PortfolioContainer />

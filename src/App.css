@@ -6,6 +6,15 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
+body{
+  height: 100vh;
+}
+
+#full-screen{
+  height: 100vh;
+  background-color: rgb(175, 175, 121);;
+}
+
 .background-color{
-  background-color: #A3BBAD;
+  background-color: rgb(175, 175, 121);
 }

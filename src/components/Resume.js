@@ -7,8 +7,8 @@ function Resume() {
     <h2 id='resume'>Resume</h2>
       <p id="resume-download">Download my <a href="/images/James_A_Cone_Resume_2023 - Google Docs.pdf" target="_blank">Resume</a></p>
 	<div id="resume-list">
-      <h5>Front-End Proficiencies</h5>
-				<ul>
+      <h5 className="resume-titles">Front-End Proficiencies</h5>
+				<ul className="list-resume-bullets">
 					<li>HTML</li>
 					<li>CSS</li>
 					<li>JavaScript</li>
@@ -18,8 +18,8 @@ function Resume() {
 				
 				</ul>
 				<br></br>
-				<h5>Back-End Proficiencies</h5>
-				<ul id="margin-resume">
+	  <h5 className="resume-titles">Back-End Proficiencies</h5>
+				<ul className="list-resume-bullets" id="margin-resume">
 					<li>APIs</li>
 					<li>NodeJS</li>
 					<li>Express</li>
