@@ -1,0 +1,21 @@
+.portfolio-info{
+    text-align: center;
+    margin:2%;
+    background-color: rgb(127, 236, 255);
+    border-radius: 5%;
+}
+.portfolio-item{
+    border: 2px solid black;
+}
+.portfolio-background{
+    margin:2%;
+}
+
+.portfolio-links{
+    width: 100%;
+}
+
+.portfolio-links a{
+    display: inline-block;
+    margin: 0 20px 20px 20px;
+}
