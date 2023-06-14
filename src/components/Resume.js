@@ -5,7 +5,7 @@ function Resume() {
   return (
   <div className="container mt-5">
     <h2>Resume</h2>
-      <p>Download my resume</p>
+      <p>Download my <a href="/images/James_A_Cone_Resume_2023 - Google Docs.pdf" target="_blank">Resume</a></p>
 
       <h5>Front-End Proficiencies</h5>
 				<ul>

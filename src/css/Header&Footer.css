@@ -3,6 +3,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
     padding: 10px 5px;
+    background-color: #7F8481;
 }
 
 .linkedin {
@@ -11,4 +12,8 @@ footer {
 
 .github{
     color: black;
+}
+
+.header-nav-color{
+    background-color: #7F8481;
 }

@@ -39,6 +39,11 @@ function Contact() {
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
+    if (!message) {
+      setErrorMessage('Message is required');
+
+      return;
+    }
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
@@ -70,6 +75,7 @@ function Contact() {
             name="message"
             onChange={handleInputChange}
             type="text"
+            id="message-height"
           />
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>

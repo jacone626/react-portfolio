@@ -1,8 +1,9 @@
 import React from 'react';
+import '../css/Header&Footer.css';
 
 function Header() {
     return (
-        <h1>James Alan Cone</h1>
+        <h1 className="header-nav-color">James Alan Cone</h1>
     );
   }
   // Export Header

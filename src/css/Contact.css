@@ -9,6 +9,12 @@
     width: 50%;
   }
 
+  #message-height{
+    height:250px;
+    vertical-align: top;
+    line-height: normal;
+  }
+
   @media (max-width: 912px) {
     .form input {
         width: 90%;

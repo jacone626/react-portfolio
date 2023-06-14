@@ -1,8 +1,9 @@
 import React from 'react';
+import '../css/Header&Footer.css';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs header-nav-color">
       <li className="nav-item">
         <a
           href="#about"
