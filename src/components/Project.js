@@ -4,8 +4,8 @@ import '../css/Portfolio.css'
 function Project(props) {
     return (
         <div className="row portfolio-container">
-        {props.projects.map(project => (   
-        <div className="col-lg-4 col-md-6 portfolio-item filter-app" key={project.id}>
+        {props.projects.map((project, index) => (   
+        <div className="col-lg-4 col-md-6 portfolio-item filter-app" key={index}>
           <div className="portfolio-wrap portfolio-background">
             <img src={project.image} className="img-fluid" alt="application homepage" id="portfolio-images"/>
             <div className="portfolio-info">

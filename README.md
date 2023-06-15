@@ -1,4 +1,4 @@
-# react-portfolio
+# React Portfolio
 
 
 ## Description
@@ -29,7 +29,7 @@ Below is a link to the active website:
 
 
 ## Credits
-N/A
+https://github.com/gitname/react-gh-pages
 
 ## License
 Please refer to the license in the repo.
