@@ -26,7 +26,7 @@ The final section is the resume. It contains a link to download my resume and a 
 
 Below is a link to the active website:
 
-
+https://jacone626.github.io/react-portfolio
 
 ## Credits
 https://github.com/gitname/react-gh-pages
