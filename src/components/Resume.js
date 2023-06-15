@@ -1,11 +1,12 @@
 import React from 'react';
-import '../css/Resume.css'
+import '../css/Resume.css';
+import resume from "../images/James_A_Cone_Resume_2023 - Google Docs.pdf"
 
 function Resume() {
   return (
   <div className="container mt-5">
     <h2 id='resume'>Resume</h2>
-      <p id="resume-download">Download my <a href="/images/James_A_Cone_Resume_2023 - Google Docs.pdf" target="_blank">Resume</a></p>
+      <p id="resume-download">Download my <a href={resume} download>Resume</a></p>
 	<div id="resume-list">
       <h5 className="resume-titles">Front-End Proficiencies</h5>
 				<ul className="list-resume-bullets">
